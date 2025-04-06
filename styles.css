@@ -1,0 +1,19 @@
+.baloon {
+    width: 200px;
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    animation: zboara 10s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.baloon img {
+    width: 100%;
+}
+
+@keyframes zboara{
+    from {top: 450px;} 
+    to{top:0px;} 
+}
