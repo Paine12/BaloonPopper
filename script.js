@@ -8,6 +8,8 @@ function animationFinish(n){
     
 }
 
+baloon.addEventListener("click", ()=> baloon.remove())
+
 animationFinish(baloon)
 
 function moreBaloons() {
@@ -16,6 +18,9 @@ function moreBaloons() {
     balonNou.style.left = `${Math.floor(Math.random() * 100)}%`
     document.body.appendChild(balonNou)
     animationFinish(balonNou)
+    balonNou.addEventListener("click", ()=> balonNou.remove())
 }
+
+
 
 setInterval(moreBaloons,(3000));
